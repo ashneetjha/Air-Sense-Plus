@@ -1,0 +1,38 @@
+{
+  "feature_columns": [
+    "co",
+    "no2",
+    "temperature",
+    "humidity",
+    "aqi_lag_1",
+    "aqi_lag_3",
+    "aqi_lag_6",
+    "aqi_roll_mean_3",
+    "aqi_roll_mean_6",
+    "hour_of_day"
+  ],
+  "sequence_feature_columns": [
+    "co",
+    "no2",
+    "temperature",
+    "humidity",
+    "aqi_lag_1",
+    "aqi_lag_3",
+    "aqi_lag_6",
+    "aqi_roll_mean_3",
+    "aqi_roll_mean_6",
+    "hour_of_day"
+  ],
+  "target_column": "aqi",
+  "sequence_length": 12,
+  "default_values": {
+    "co": 0.8500000238418579,
+    "no2": 20.18000030517578,
+    "temperature": 26.200000762939453,
+    "humidity": 72.0,
+    "aqi": 116.0,
+    "aqi_roll_mean_3": 116.66666412353516,
+    "aqi_roll_mean_6": 116.83333587646484
+  },
+  "timezone": "Asia/Kolkata"
+}

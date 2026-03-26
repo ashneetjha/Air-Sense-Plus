@@ -1,0 +1,23 @@
+{
+  "model_type": "lstm",
+  "rmse": 15.779270161236516,
+  "mae": 3.8994882106781006,
+  "r2": 0.9806839823722839,
+  "n_train": 372290,
+  "n_test": 206063,
+  "n_features": 10,
+  "feature_columns": [
+    "co",
+    "no2",
+    "temperature",
+    "humidity",
+    "aqi_lag_1",
+    "aqi_lag_3",
+    "aqi_lag_6",
+    "aqi_roll_mean_3",
+    "aqi_roll_mean_6",
+    "hour_of_day"
+  ],
+  "sequence_length": 12,
+  "epochs": 5
+}

@@ -1,0 +1,36 @@
+{
+  "horizon": "t+0",
+  "rmse": 22.219494289912845,
+  "mae": 3.826729122151502,
+  "r2": 0.9616881495535484,
+  "n_train": 372499,
+  "n_test": 206140,
+  "baseline_rmse": 20.171602636508496,
+  "baseline_mae": 3.3613903172601143,
+  "model_type": "xgb",
+  "n_features": 10,
+  "feature_columns": [
+    "co",
+    "no2",
+    "temperature",
+    "humidity",
+    "aqi_lag_1",
+    "aqi_lag_3",
+    "aqi_lag_6",
+    "aqi_roll_mean_3",
+    "aqi_roll_mean_6",
+    "hour_of_day"
+  ],
+  "xgb_params": {
+    "n_estimators": 400,
+    "max_depth": 8,
+    "learning_rate": 0.05,
+    "subsample": 0.9,
+    "colsample_bytree": 0.9,
+    "objective": "reg:squarederror",
+    "tree_method": "hist",
+    "eval_metric": "rmse",
+    "random_state": 42,
+    "n_jobs": -1
+  }
+}

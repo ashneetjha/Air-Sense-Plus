@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: airsense-backend
+    runtime: docker
+    rootDir: backend
+    plan: free
+    healthCheckPath: /
