@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "about": "About"
+  },
+  "hero": {
+    "badge": "Hardware-Aligned Air Intelligence",
+    "title": "AirSense+",
+    "subtitle": "AQI prediction rebuilt around real CO, NO2, temperature, and humidity inputs.",
+    "cta": "View Dashboard"
+  },
+  "dashboard": {
+    "title": "AirSense+ Dashboard",
+    "subtitle": "Live AQI inference using the production sensor contract.",
+    "livePrediction": "Live Prediction",
+    "modelMetrics": "Model Metrics",
+    "currentModel": "Model Switcher",
+    "activeModel": "Active Model",
+    "modelDescription": "Set MODEL_TYPE to xgb or lstm on the backend to switch inference.",
+    "rmse": "RMSE",
+    "r2": "R2",
+    "mae": "MAE",
+    "features": "Features",
+    "trainSamples": "Train Rows",
+    "testSamples": "Test Rows",
+    "predict": "Run Prediction",
+    "predicting": "Predicting...",
+    "inputTitle": "Sensor Input",
+    "inputSubtitle": "Send a real sensor payload with only the supported hardware fields.",
+    "sensorId": "Sensor ID",
+    "co": "CO",
+    "no2": "NO2",
+    "temperature": "Temperature (C)",
+    "humidity": "Humidity (%)"
+  },
+  "theme": {
+    "light": "Light Mode",
+    "dark": "Dark Mode"
+  },
+  "lang": {
+    "en": "EN",
+    "hi": "HI"
+  },
+  "errors": {
+    "fetchFailed": "Failed to fetch data."
+  }
+}
