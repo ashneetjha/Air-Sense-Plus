@@ -150,8 +150,9 @@ def _train_single_lstm(
 
     predictions = target_scaler.inverse_transform(np.vstack(predictions_scaled)).ravel()
 
-    # Naive baseline
-    naive_pred = np.full_like(y_val, y_val.mean())  # fallback; use lag if possible
+    # Naive baseline: persist previous AQI using lag-1 from the last timestep.
+    lag_idx = FEATURE_COLUMNS.index("aqi_lag_1")
+    naive_pred = X_val[:, -1, lag_idx]
     baseline_rmse = float(np.sqrt(mean_squared_error(y_val, naive_pred)))
     baseline_mae = float(mean_absolute_error(y_val, naive_pred))
 
